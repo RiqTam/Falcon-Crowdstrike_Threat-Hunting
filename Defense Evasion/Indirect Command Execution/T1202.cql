@@ -1,3 +1,7 @@
 #event_simpleName=ProcessRollup2 event_platform=Win
-| FileName=/(Forfiles|pcalua|ScriptRunner|ssh)\.exe/i CommandLine=/(\/[pmc]|-a|-appvscript|(ProxyCommand|LocalCommand))/i
-//WerFault to add
+//Indirect Command Execution
+| FileName=/Forfiles\.exe/i CommandLine=/\/[pmc]/i
+| FileName=/pcalua\.exe/i CommandLine=/-a/i
+| FileName=/ScriptRunner\.exe/i CommandLine=/-appvscript/i
+| FileName=/ssh\.exe/i CommandLine=/(ProxyCommand|LocalCommand)/i
+| FileName=/scriptrunner\.exe/i CommandLine=/WerFault.exe/i
