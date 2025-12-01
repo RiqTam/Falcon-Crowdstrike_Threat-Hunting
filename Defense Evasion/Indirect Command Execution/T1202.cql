@@ -4,4 +4,4 @@
 | FileName=/pcalua\.exe/i CommandLine=/-a/i
 | FileName=/ScriptRunner\.exe/i CommandLine=/-appvscript/i
 | FileName=/ssh\.exe/i CommandLine=/(ProxyCommand|LocalCommand)/i
-| FileName=/scriptrunner\.exe/i CommandLine=/WerFault.exe/i
+| FileName=/scriptrunner\.exe/i CommandLine=/WerFault\.exe/i
